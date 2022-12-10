@@ -1,0 +1,3 @@
+In windows if you can't install the pychatgpt module first do
+pip wheel --upgrade and pip install of file from here:
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml
