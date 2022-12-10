@@ -1,5 +1,6 @@
+import os
 import tkinter as tk
-
+import datetime
 
 
 
@@ -16,8 +17,12 @@ options.track = True
 
 # Optionally, you can pass a file path to save the conversation
 # They're created if they don't exist
-options.chat_log = "chat_log.txt"
-options.id_log = "id_log.txt"
+# get current time
+import datetime
+cur_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+cur_time = cur_time.replace(":", "-")
+options.chat_log = os.path.join("app", "run_time_files", f"{cur_time}_chat_log.txt")
+options.id_log = os.path.join("app", "run_time_files", f"{cur_time}_id_log.txt")
 
 # Create a Chat object
 chat = Chat(email="kirat77@gmail.com", password="Progriri1!", options=options)
