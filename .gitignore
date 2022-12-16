@@ -1,1 +1,3 @@
-app/run_time_files
+checks/
+app/logs/*
+.vscode/local.env

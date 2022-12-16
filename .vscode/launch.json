@@ -5,12 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Personal Assisstant",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/app/personal_assistant.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "envFile": "${workspaceFolder}/.vscode/local.env"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "justMyCode": false
+            "justMyCode": false,
+            "envFile": "${workspaceFolder}/.vscode/local.env"
         }
     ]
 }
