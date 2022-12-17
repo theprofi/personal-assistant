@@ -23,6 +23,13 @@ class TkView(AppView):
         output_field = tk.Text(self.root)
         output_field.pack()
 
+        # Function to resize the textbox when the window is resized
+        def resize_textbox(event):
+            output_field.config(width=event.width)
+
+        # Bind the resize_textbox function to the root window
+        self.root.bind('<Configure>', resize_textbox)
+
         # create a button widget
         def show_output(*args, **kwargs):
             def __thread_func():
