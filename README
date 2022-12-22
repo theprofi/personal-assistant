@@ -1,6 +1,0 @@
-In windows if you can't install the pychatgpt module first do
-pip wheel --upgrade and pip install of file from here:
-https://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml
-
-
-Yes, you can use me with the Python API! I am a large language model trained by OpenAI, and I can be used to generate natural-sounding text in a wide variety of applications. To use me with the Python API, you will need to install the OpenAI API client and create an account with OpenAI. Then, you can use the openai.Completion.create() method to generate text using my language model.
